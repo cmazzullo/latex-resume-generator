@@ -2,6 +2,41 @@
 <html>
   <head>
     <title>latex-resume-generator</title>
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  
   <body>
+    <p><em>So the idea here is that we collect all the resume info to
+        pass to latexgen.py...</em></p>
+    <form action="scripts/latexgen.py" method="post">
+      Contact:
+      <ul>
+        <li>First Name <input type="text"></li>
+        <li>Last Name <input type="text"></li>
+        <li>Phone <input type="text"></li>
+        <li>Email <input type="text"></li>
+        <li>Website <input type="text"></li>
+      </ul>
+      
+      <p>Objective: <input type="text"></p>
+      
+      Education:
+      <ul>
+        <li>Date <input type="text"></li>
+        <li>Degree <input type="text"></li>
+        <li>Major <input type="text"></li>
+        <li>Minor <input type="text"></li>
+        <li>Location <input type="text"></li>
+      </ul>
+
+      Experience:
+      <ul>
+        <li>Company <input type="text"></li>
+        <li>Title <input type="text"></li>
+        <li>Dates <input type="text"></li>
+        <li>Location <input type="text"></li>
+        <li>Bullets <input type="text"></li>
+      </ul>
+    </form>
   </body>
 </html>
